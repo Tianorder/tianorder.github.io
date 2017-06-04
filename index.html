@@ -1,23 +1,117 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!doctype html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>东方年代记 攻略集 Ver1.000</title>
-<style type="text/css">
-body,td,th {
-	font-family: "方正准圆_GBK","微软雅黑", sans-serif;
-	font-size: 10px;
-	color: #312E6D;
-}
-body {
-	background-color: #FFF;
-}
-</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>天灵狐的主页</title>
+    <style>
+        h2,p{background: yellow;margin-left:2em;}
+        .right {float:right}
+        .left  {float:left}
+        div {background: orange;}
+        hr {clear:left;} /*让hr左侧无float区块*/
+    </style>
 </head>
-<frameset rows="*" cols="279,*" framespacing="0" frameborder="no" border="0">
-  <frame src="html/left-side.html" name="leftFrame" scrolling="auto" noresize="noresize" id="leftFrame" title="leftFrame" />
-  <frame src="html/Main.html" name="mainFrame" scrolling="auto" id="mainFrame" title="mainFrame" />
-</frameset>
-<noframes><body>
-</body></noframes>
+<body>
+    <div class="header">
+        <div id="blog_title">
+            <h2>
+				<a href="index.html">天上之上</a>
+			</h2>
+            <h3>天灵狐的个人主页</h3>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+		<div class="menu">
+			<select>
+				<option value="index">首页</option>
+				<option value="saab">时光</option>
+				<option value="opel">关于</option>
+				<option value="audi">留言</option>
+			</select>
+		</div>
+	</div>
+    <hr>
+    <div class="left">
+		<div id="panel_Profile" class="panel">
+			<ul class="panel_head"><span>最近我在做什么</span></ul>
+			<ul class="panel_body profile">
+				<div class="list_item article_item">
+					<div class="article_title">   
+						<span class="ico ico_type_Original"></span>
+						<h1>
+							<span class="link_title"><a href="/tiantuanzi/article/details/71081364">
+							在写这个破主页        
+							</a></span>
+						</h1>
+					</div>
+					<div class="article_description">
+						表面上是在写这个主页，实际上是在学CSS。
+						喵的，一个代码一个代码的敲好难
+						果然还是应该用DreamWeaver
+					</div>
+					<div class="article_manage">
+					<span class="link_postdate">2017-06-04 16:17</span>
+					<span class="link_view" title="阅读次数"><a href="/tiantuanzi/article/details/71081364" title="阅读次数">阅读</a>(2)</span>
+					<span class="link_comments" title="评论次数"><a href="/tiantuanzi/article/details/71081364#comments" title="评论次数" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(0)</span>
+
+				</div>
+
+			</ul>
+		</div>
+		<div id="main_module" class="panel">
+			<ul class="panel_head"><span>主要模块</span></ul>
+			<ul class="panel_body message">
+				<div>这里是本页面的主要内容</div>
+			</ul>
+		</div>
+	</div>
+    <div class="right">
+		<div id="panel_Profile" class="panel">
+			<ul class="panel_head"><span>个人档案</span></ul>
+			<ul class="panel_body profile">
+			<div id="blog_userface">
+				<a href="profile.html" target="_blank">
+					<img src="http://thumbnail0.baidupcs.com/thumbnail/499829324d252834f772b4b07ad7409f?fid=2955080235-250528-125969831311419&time=1496559600&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-5nfwt73U3Y%2BfQkSJO%2BA5OiqsEeE%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=3586855220353128987&dp-callid=0&size=c710_u400&quality=100" title="关于我" style="max-width:90%"/>
+				</a>
+				<br />
+				<span><a href="profile.html" class="user_name" target="_blank">天灵狐</a></span>
+			</div>
+			<div id="blog_medal">
+				<div id="bms_box">
+					<a href="https://www.douban.com/people/tianorder/" target="_blank">
+							<img src="https://img3.doubanio.com/favicon.ico" onmouseover="m_over_m(this,4)" onmouseout="m_out_m()" alt="1" >
+					</a>
+					<a href="http://blog.csdn.net/tiantuanzi" target="_blank">
+							<img src="http://c.csdnimg.cn/public/favicon.ico" onmouseover="m_over_m(this,4)" onmouseout="m_out_m()" alt="2" >
+					</a>
+				</div>
+			</div>
+			<ul id="blog_rank">
+				<li>也叫Tianorder啦</li>
+			</ul>
+			</ul>
+		</div>
+		<div id="friendly_link" class="panel">
+			<ul class="panel_head"><span>友情链接</span></ul>
+			<ul class="panel_body itemlist">
+			<li>
+			<a href="https://jovipro.com/" title="Burning Soul">
+				<div>
+					<img src="https://jovipro.com/lib/exe/fetch.php?media=favicon.ico" onmouseover="m_over_m(this,4)" onmouseout="m_out_m()" alt="2" >
+					Burning Soul
+				<div>
+			</a>
+			</li>
+			</ul>
+		</div>
+		<div id="message_board" class="panel">
+			<ul class="panel_head"><span>留言板</span></ul>
+			<ul class="panel_body message">
+				<div>暂无留言功能</div>
+			</ul>
+		</div>
+	</div>
+</body>
 </html>
