@@ -22,7 +22,9 @@
 		.sub_title	{text-align: left;
 					margin-left: 4em;
 					color: dimgrey;}
-		.profile_name	{text-align: center;}
+		.panel	{margin:auto}
+		#profile_name	{margin-left: 25%;}
+		#profile_detail	{text-align: left;}
     </style>
 </head>
 <body>
@@ -84,17 +86,13 @@
     <div class="right">
 		<div id="panel_Profile" class="panel">
 			<ul class="panel_head"><span>个人档案</span></ul>
-			<ul class="panel_body profile">
-				<div id="blog_userface" class="profile_name" >
-					<a href="profile.html" target="_blank">
-						<img src="http://wx4.sinaimg.cn/large/a47a351agy1fgbjchnzixj204g04h40c.jpg" title="嗯 你的鼠标不错" style="max-width:90%"/>
-					</a>
-					<br />
-					<span>
-						<a href="profile.html"target="_blank">天灵狐</a>
-					</span>
-				</div>
-				<div id="blog_medal">
+			<ul class="panel_body" id="profile">
+				<a href="profile.html" target="_blank">
+					<img src="http://wx4.sinaimg.cn/large/a47a351agy1fgbjchnzixj204g04h40c.jpg" title="嗯 你的鼠标不错" style="max-width:90%"/>
+					<div id="profile_name">天灵狐</div>
+				</a>
+				<br />
+				<div id="profile_detail">
 					<div id="bms_box">
 						<a href="https://www.douban.com/people/tianorder/" target="_blank">
 								<img class="icon" src="https://img3.doubanio.com/favicon.ico" alt="豆瓣" >
@@ -103,10 +101,10 @@
 								<img class="icon" src="http://c.csdnimg.cn/public/favicon.ico" alt="技术博客" >
 						</a>
 					</div>
+					<ul id="blog_rank">
+						<li>也叫Tianorder啦</li>
+					</ul>
 				</div>
-				<ul id="blog_rank">
-					<li>也叫Tianorder啦</li>
-				</ul>
 			</ul>
 		</div>
 		<div id="friendly_link" class="panel">
