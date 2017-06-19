@@ -23,8 +23,11 @@
 					margin-left: 4em;
 					color: dimgrey;}
 		.panel	{margin:auto}
-		#profile_name	{margin-left: 25%;}
+		#profile_name	{text-align: center;}
 		#profile_detail	{text-align: left;}
+        #profile_head   {width: 160px;
+                        position: relative;
+                        margin:  auto;}
     </style>
 </head>
 <body>
@@ -87,24 +90,26 @@
 		<div id="panel_Profile" class="panel">
 			<ul class="panel_head"><span>个人档案</span></ul>
 			<ul class="panel_body" id="profile">
-				<a href="profile.html" target="_blank">
-					<img src="http://wx4.sinaimg.cn/large/a47a351agy1fgbjchnzixj204g04h40c.jpg" title="嗯 你的鼠标不错" style="max-width:90%"/>
-					<div id="profile_name">天灵狐</div>
-				</a>
-				<br />
-				<div id="profile_detail">
-					<div id="bms_box">
-						<a href="https://www.douban.com/people/tianorder/" target="_blank">
-								<img class="icon" src="https://img3.doubanio.com/favicon.ico" alt="豆瓣" >
-						</a>
-						<a href="http://blog.csdn.net/tiantuanzi" target="_blank">
-								<img class="icon" src="http://c.csdnimg.cn/public/favicon.ico" alt="技术博客" >
-						</a>
-					</div>
-					<ul id="blog_rank">
-						<li>也叫Tianorder啦</li>
-					</ul>
-				</div>
+                <div id="profile_head">
+                    <a href="profile.html" target="_blank">
+                        <img src="http://wx4.sinaimg.cn/large/a47a351agy1fgbjchnzixj204g04h40c.jpg" title="嗯 你的鼠标不错" />
+                        <div id="profile_name">天灵狐</div>
+                    </a>
+                    <br />
+                    <div id="profile_detail">
+                        <div id="bms_box">
+                            <a href="https://www.douban.com/people/tianorder/" target="_blank">
+                                    <img class="icon" src="https://img3.doubanio.com/favicon.ico" alt="豆瓣" >
+                            </a>
+                            <a href="http://blog.csdn.net/tiantuanzi" target="_blank">
+                                    <img class="icon" src="http://c.csdnimg.cn/public/favicon.ico" alt="技术博客" >
+                            </a>
+                        </div>
+                        <ul id="blog_rank">
+                            <li>也叫Tianorder啦</li>
+                        </ul>
+                    </div>
+                </div>
 			</ul>
 		</div>
 		<div id="friendly_link" class="panel">
