@@ -5,29 +5,59 @@
 	<link rel="shortcut icon" href="http://download.easyicon.net/ico/538954/48/"/>
     <title>天灵狐的主页</title>
     <style>
-		.header {height: 150px;
-				background-image: url(http://wx2.sinaimg.cn/large/a47a351agy1fgbj6zo0e1j217j06xql2.jpg);
-				background-position: 50% 0;
-				background-repeat: no-repeat;}
+		.header {
+			height: 150px;
+			background-image: url(http://wx2.sinaimg.cn/large/a47a351agy1fgbj6zo0e1j217j06xql2.jpg);
+			background-position: 50% 0;
+			background-repeat: no-repeat;
+		}
         .right	{float:right; width: 20%}
         .left	{float:left; width:80%}
 		body	{background-color: aliceblue;}
         h2,p	{margin-left:2em;}
 		a		{text-decoration:none;}
-		img.icon	{height:30px;
-					width:30px;}
-        hr		{clear:left;} /*让hr左侧无float区块*/
-		.title	{padding: 2em 0 0 0;
-				color: darkblue;}
-		.sub_title	{text-align: left;
-					margin-left: 4em;
-					color: dimgrey;}
-		.panel	{margin:auto}
-		#profile_name	{text-align: center;}
-		#profile_detail	{text-align: left;}
-        #profile_head   {width: 160px;
-                        position: relative;
-                        margin:  auto;}
+		img.icon	{
+			height:30px;
+			width:30px;
+		}
+        hr	{
+			clear:left;
+		} /*让hr左侧无float区块*/
+		.title	{
+			padding: 2em 0 0 0;
+			color: darkblue;
+		}
+		.sub_title	{
+			text-align: left;
+			margin-left: 4em;
+			color: dimgrey;
+		}
+        .panel {
+            margin: 0 0 1em 2em;
+            padding: 1px;
+            border: solid 1px #80DFEA;
+            background: #F4FBFB;
+        }
+        .panel_head {
+            clear: both;
+            height: 30px;
+            padding: 0 5px;
+            background: blanchedalmond repeat-x top;
+            color: #333;
+            font: bold 12px/30px Arial;
+            text-indent: 5px;
+		}
+		#profile_name	{
+			text-align: center;
+		}
+		#profile_detail	{
+            text-align: left;
+        }
+        #profile_head	{
+            position: relative;
+            margin:  auto;
+			text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -89,10 +119,10 @@
     <div class="right">
 		<div id="panel_Profile" class="panel">
 			<ul class="panel_head"><span>个人档案</span></ul>
-			<ul class="panel_body" id="profile">
+			<div class="panel_body" id="profile">
                 <div id="profile_head">
                     <a href="profile.html" target="_blank">
-                        <img src="http://wx4.sinaimg.cn/large/a47a351agy1fgbjchnzixj204g04h40c.jpg" title="嗯 你的鼠标不错" />
+                        <img src="http://wx4.sinaimg.cn/large/a47a351agy1fgbjchnzixj204g04h40c.jpg" title="嗯 你的鼠标不错" style="max-width:100%"/>
                         <div id="profile_name">天灵狐</div>
                     </a>
                     <br />
@@ -110,7 +140,7 @@
                         </ul>
                     </div>
                 </div>
-			</ul>
+			</div>
 		</div>
 		<div id="friendly_link" class="panel">
 			<ul class="panel_head"><span>友情链接</span></ul>
