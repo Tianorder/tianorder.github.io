@@ -32,6 +32,30 @@
 			margin-left: 4em;
 			color: dimgrey;
 		}
+		.menu{
+			background: #fff; 
+			border:	1px solid #c00; 
+			position:	relative; 
+			float:	left; 
+			margin-right:	1em;
+			margin-left:	2em;
+			font:	13.3333px Arial;
+			line-height:	22px;
+		}
+		.menu .submenu{
+			background: #ccc; 
+			border: 1px solid #00c; 
+			position: absolute; 
+			top: 25px; 
+			left: -1px; 
+			width: 5em;
+		}
+		.menu .submenu{
+			display: none;
+		}
+		.menu:hover .submenu{
+			display: block;
+		}
         .panel {
             margin: 0 0 1em 2em;
             padding: 1px;
@@ -57,6 +81,7 @@
             position: relative;
             margin:  auto;
 			text-align: center;
+			width:	160px;
         }
     </style>
 </head>
@@ -73,13 +98,13 @@
         <div class="clear">
         </div>
 		<div class="menu">
-			<select>
-				<option value="index">首页</option>
-				<option value="saab">时光</option>
-				<option value="opel">关于</option>
-				<option value="audi">留言</option>
-			</select>
-		</div>
+			<div>首页</div>
+			<div class="submenu">
+				<div>时光</div>
+				<div>关于</div>
+				<div>留言</div>
+			</div>
+        </div>
 	</div>
     <hr>
     <div class="left">
