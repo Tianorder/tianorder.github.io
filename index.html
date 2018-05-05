@@ -7,7 +7,7 @@
     <style>
 		.header {
 			height: 150px;
-			background-image: url(http://wx2.sinaimg.cn/large/a47a351agy1fgbj6zo0e1j217j06xql2.jpg);
+			background-image: url(http://7xnuh4.com1.z0.glb.clouddn.com/images/banner.png);
 			background-position: 50% 0;
 			background-repeat: no-repeat;
 		}
@@ -18,6 +18,11 @@
 		body	{
 			background-color: aliceblue;
 			margin:0px;
+		}
+		img {
+			margin: auto;
+			height: auto;
+			max-width: 100%;
 		}
 		img.icon	{
 			height:30px;
@@ -92,6 +97,13 @@
             font: bold 12px/30px Arial;
             text-indent: 5px;
 		}
+		.wrap_half {
+			width: 48%;
+			margin-right: 4%;
+		}
+        .work_name	{
+			text-align: center;
+        }
 		#profile_name	{
 			text-align: center;
 		}
@@ -121,7 +133,7 @@
 		<div class="menu">
 			<a href="">首页</a>
 			<div class="submenu">
-				<div><a href="">时光</a></div>
+				<div><a href="blog/index.html">时光</a></div>
 				<div><a href="">关于</a></div>
 				<div><a href="">留言</a></div>
 			</div>
@@ -136,29 +148,37 @@
 					<div class="article_title">   
 						<span class="ico ico_type_Original"></span>
 						<h1>
-							<span class="link_title"><a href="/tiantuanzi/article/details/71081364">
-							在写这个破主页        
+							<span class="link_title"><a href="blog/2018/05/03/%E6%8A%8Ahexo%E7%94%9F%E6%88%90%E7%9A%84%E4%B8%9C%E8%A5%BF%E6%94%BE%E5%88%B0%E7%AC%AC%E4%BA%8C%E9%A1%B5/index.html">
+							把hexo生成的东西放到第二页        
 							</a></span>
 						</h1>
 					</div>
 					<div class="article_description">
-						表面上是在写这个主页，实际上是在学CSS。
-						喵的，一个代码一个代码的敲好难
-						果然还是应该用DreamWeaver
+						貌似Hexo的社区活跃度更高，所以使用Hexo。
+                        阅读Hexo文档时，我意识到，不一定非要把它生成的东西放在首页。它可以是一个功能，可以是我的第二页。
+                        所谓“博客”页，一般被放到主页当做主页的主要内容，所以很少会有人点进来吧。
+                        人们只会点首页的最新文章罢了。
+
+                        说起来，首页的最新文章，我需要想办法自动生成。
 					</div>
 					<div class="article_manage">
-					<span class="link_postdate">2017-06-04 16:17</span>
+					<span class="link_postdate">2018-05-03 13:53</span>
 					<span class="link_view" title="阅读次数"><a href="/tiantuanzi/article/details/71081364" title="阅读次数">阅读</a>(2)</span>
 					<span class="link_comments" title="评论次数"><a href="/tiantuanzi/article/details/71081364#comments" title="评论次数" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(0)</span>
-
+                    </div>
 				</div>
 
 			</ul>
 		</div>
 		<div id="main_module" class="panel">
-			<ul class="panel_head"><span>主要模块</span></ul>
+			<ul class="panel_head"><span>作品以及</span></ul>
 			<ul class="panel_body message">
-				<div>这里是本页面的主要内容</div>
+				<div class="wrap_half"><div class="wrap_box plugin_wrap">
+				<p>
+					<a href="/doku.php?id=games:start" class="media" target="_tab" title="games:start"><img src="http://wx1.sinaimg.cn/mw690/a47a351agy1fmnokjmszbj20qc0o748q.jpg" class="media" title="mc-mobs.jpg" alt="mc-mobs.jpg"></a> <br>
+					<div class="work_name"><strong>【漫画】美好的世界</strong></div>
+				</p>
+				</div></div>
 			</ul>
 		</div>
 	</div>
@@ -196,7 +216,7 @@
 						<div>
 							<img class="icon" src="https://jovipro.com/lib/exe/fetch.php?media=favicon.ico" onmouseover="m_over_m(this,4)" onmouseout="m_out_m()" alt="2" >
 							Burning Soul
-						<div>
+						</div>
 					</a>
 				</li>
 			</ul>
