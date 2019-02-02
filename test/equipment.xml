@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<equipmentstore> 
+  <equipment> 
+    <category>Web_server</category>  
+    <id>00001</id>  
+    <position_x>200</position_x>  
+    <position_y>200</position_y>  
+    <shape/>  
+    <link>00002</link>
+  </equipment>
+  <equipment> 
+    <category>router</category>  
+    <id>00002</id>  
+    <position_x>400</position_x>  
+    <position_y>400</position_y>  
+    <shape/>  
+    <link>00001</link>
+    <link>00003</link>
+  </equipment>
+  <equipment> 
+    <category>router</category>  
+    <id>000003</id>  
+    <position_x>600</position_x>  
+    <position_y>200</position_y>  
+    <shape/>  
+    <link>00002</link> 
+  </equipment> 
+</equipmentstore>

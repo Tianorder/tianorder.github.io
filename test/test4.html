@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+    <p>测试读取方法！</p>
+    <script>
+        function loadXML() {
+            console.log("正在读取");
+            var xmlDoc;
+            try { //IE浏览器
+                xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+                } catch (e) { //firefox,opera...火狐、欧朋等浏览器
+                xmlDoc = document.implementation.createDocument("", "", null);
+            }
+            try {
+                xmlDoc.asyc = false; //是否异步调用
+                xmlDoc.load("./equipment.xml"); //文件路径
+            } catch (e) { //chrome
+                var xmlhttp = new window.XMLHttpRequest();
+                //创建一个新的http请求，并指定此请求的方法、URL以及验证信息
+                xmlhttp.open("GET", "equipment.xml", false); 
+                xmlhttp.send(null);
+                if (xmlhttp.readyState == 4) {
+                    xmlDoc = xmlhttp.responseXML.documentElement;
+                }
+            }
+            console.log("读取完成");
+            //console.log(xmlDoc);
+            return xmlDoc;
+        }
+    </script>
+    <script>
+        var xmlDoc = loadXML();//调用该方法即读取出来
+        document.write(xmlDoc);
+    </script>
+</body>
+</html>
