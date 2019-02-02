@@ -24,7 +24,7 @@
             } catch (e) { //chrome
                 var xmlhttp = new window.XMLHttpRequest();
                 //创建一个新的http请求，并指定此请求的方法、URL以及验证信息
-                xmlhttp.open("GET", "equipment.xml", false); 
+                xmlhttp.open("GET", "books.xml", false); 
                 xmlhttp.send(null);
                 if (xmlhttp.readyState == 4) {
                     xmlDoc = xmlhttp.responseXML.documentElement;
@@ -37,7 +37,11 @@
     </script>
     <script>
         var xmlDoc = loadXML();//调用该方法即读取出来
-        document.write(xmlDoc);
+        document.write(xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue);
+		document.write("<br />");
+		document.write(xmlDoc.getElementsByTagName("author")[0].childNodes[0].nodeValue);
+		document.write("<br />");
+		document.write(xmlDoc.getElementsByTagName("year")[0].childNodes[0].nodeValue);
     </script>
 </body>
 </html>
