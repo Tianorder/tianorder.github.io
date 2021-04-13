@@ -109,3 +109,31 @@ hr	{
 	text-align: center;
 	width:	160px;
 }
+.change_color {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(-45deg, rgb(238, 119, 82), rgb(135, 28, 89), rgb(2, 107, 196), rgb(35, 213, 171)) 0% 0% / 400% 400%;
+    animation: 5s ease 0s infinite normal none running change_color_keyframe;
+}
+.black_bottom {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    pointer-events: none;
+    bottom: 0px;
+    z-index: 0;
+}
+.black_bottom span {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(rgba(0, 212, 255, 0) 0%, rgba(0, 0, 0, 0.33) 100%);
+}
+@-webkit-keyframes change_color_keyframe{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}/*!sc*/
+@keyframes change_color_keyframe{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}/*!sc*/
