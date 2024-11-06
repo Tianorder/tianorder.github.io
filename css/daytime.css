@@ -135,5 +135,17 @@ hr	{
     height: 30%;
     background: linear-gradient(rgba(0, 212, 255, 0) 0%, rgba(0, 0, 0, 0.33) 100%);
 }
+.model_cover {
+    max-width: 100%;
+    max-height: 300px; /* 你可以根据需要调整这个值 */
+    height: auto; /* 这将保持图片的宽高比 */
+    width: auto; /* 这将允许图片根据其高度和宽高比自动调整宽度 */
+    object-fit: contain; /* 这将确保图片完全可见，且不会被裁剪 */
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 定义两列，每列占据相同的空间 */
+    /* 可以添加其他样式 */
+}
 @-webkit-keyframes change_color_keyframe{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}/*!sc*/
 @keyframes change_color_keyframe{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}/*!sc*/
