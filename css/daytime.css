@@ -80,6 +80,7 @@ hr	{
     border: solid 1px #80DFEA;
     background: #F4FBFB;
 	box-shadow: 10px 10px 5px lightblue;
+	position: relative;
 }
 .panel_head {
     clear: both;
